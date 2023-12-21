@@ -1,0 +1,8 @@
+print ("Loan Calculator")
+print ("$1000 over 10 years at 5% APR")
+loan = int(input( "Enter the loan amount: "))
+total = loan
+for counter in range (10):
+    total = total * 1.05
+    print ("After", counter + 1, "years, you will have $", total)
+    print ("You paid $", total - 1000, "in interest.")
